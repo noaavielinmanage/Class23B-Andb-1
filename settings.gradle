@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Class23B-Andb-1"
-include ':app'
+include ':cigarettes'
 include ':common'
 include ':cola'

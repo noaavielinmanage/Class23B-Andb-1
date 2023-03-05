@@ -1,14 +1,14 @@
-package com.guy.cola;
+package com.guy.common;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class Activity_About extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_about);
     }
 }

@@ -1,4 +1,4 @@
-package com.guy.class23b_andb_1;
+package com.guy.common.utils;
 
 // Need also import gradle:         implementation 'com.google.code.gson:gson:2.8.2'
 

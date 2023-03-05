@@ -1,13 +1,15 @@
-package com.guy.class23b_andb_1;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.guy.common;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
+import com.guy.common.utils.MSP;
+import com.guy.common.utils.MySignalV2;
 
 public class Activity_Home extends AppCompatActivity {
 
@@ -25,6 +27,7 @@ public class Activity_Home extends AppCompatActivity {
         initViews();
 
         initAds();
+
     }
 
     private void initAds() {
@@ -39,7 +42,7 @@ public class Activity_Home extends AppCompatActivity {
     }
 
     private void statsClicked() {
-        startActivity(new Intent(this, Activity_Stats.class));
+        startActivity(new Intent(this, App_Parent.statsClass));
     }
 
     private void yesClicked() {
@@ -48,6 +51,8 @@ public class Activity_Home extends AppCompatActivity {
     }
 
     private void noClicked() {
+        MySignalV2.getInstance().showToast("Hi");
+
         int current = MSP.getInstance().getInt("KEY_NO", 0);
         MSP.getInstance().putInt("KEY_NO", current + 1);
     }
