@@ -7,9 +7,11 @@ import com.guy.common.utils.MySignalV2;
 
 public abstract class App_Parent extends Application {
 
+    public static String adid = null;
     protected static Class<?> statsClass;
 
     protected abstract String getWeatherApiKey();
+    protected abstract String getAdMobBannerID();
 
     @Override
     public void onCreate() {
@@ -21,6 +23,8 @@ public abstract class App_Parent extends Application {
 
         String weatherApiKey = getWeatherApiKey();
         initAPI(weatherApiKey);
+
+        adid = getAdMobBannerID();
 
     }
 

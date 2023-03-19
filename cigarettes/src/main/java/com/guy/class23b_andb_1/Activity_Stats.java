@@ -9,6 +9,7 @@ public class Activity_Stats extends Activity_StatsParent {
 
     @Override
     protected String getData() {
+
         int numOfNoCigarettes = MSP.getInstance().getInt("KEY_NO", 0);
         double packets = 0;
         try {

@@ -31,7 +31,7 @@ public class Activity_Home extends AppCompatActivity {
     }
 
     private void initAds() {
-        String id = "dfdfdfsdf";
+        String id = App_Parent.adid;
         home_LBL_ad.setText(id);
     }
 

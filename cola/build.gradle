@@ -17,9 +17,27 @@ android {
     }
 
     buildTypes {
+        def addConstantTo = {target, constantName, constantValue ->
+            target.manifestPlaceholders += [ (constantName):constantValue]
+            target.buildConfigField "String", "${constantName}", "\"${constantValue}\""
+        }
+
+        debug {
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField('String', 'BaseUrl', '"https://apidemo."')
+
+            addConstantTo(owner,"WEATHER_API_KEY", "DEF1")
+
+        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            addConstantTo(owner,"WEATHER_API_KEY", "DEF_TRUE1")
+
         }
     }
     compileOptions {

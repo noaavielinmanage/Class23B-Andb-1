@@ -10,7 +10,7 @@ public class App extends App_Parent {
 
     @Override
     protected String getWeatherApiKey() {
-        return "API_FOR_COCA_COLA";
+        return BuildConfig.WEATHER_API_KEY;
     }
 
     @Override
