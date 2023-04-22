@@ -1,10 +1,11 @@
-package com.project.contacts
+package com.example.meeting
 
 import com.guy.common.App_Parent
+
 
 class App : App_Parent() {
     override fun onCreate() {
         super.onCreate()
-        statsClass = AddContactActivity::class.java
+        statsClass = AddMeetingActivity::class.java
     }
 }

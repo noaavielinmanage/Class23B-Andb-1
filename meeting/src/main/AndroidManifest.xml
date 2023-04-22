@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/MaterialAlertDialog.Material3">
         <activity
-            android:name=".AddContactActivity"
+            android:name=".AddMeetingActivity"
             android:exported="true"/>
 
     </application>
