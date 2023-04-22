@@ -1,8 +1,5 @@
 package com.guy.class23b_andb_1;
 
-import android.content.Context;
-
-import com.guy.common.Activity_StatsParent;
 import com.guy.common.utils.MSP;
 
 public class Activity_Stats extends Activity_StatsParent {

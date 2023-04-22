@@ -1,47 +1,16 @@
 package com.guy.common.utils;
 
-// Need also import gradle:         implementation 'com.google.code.gson:gson:2.8.2'
-
-/*
-
-    MSP V4
-   <<<<    Initial:    >>>>
-        Put in Application class:
-        PreferencesHelper.initHelper(this);
-        PreferencesHelper.initHelper(this, "CustomName");
-        *Will use app name as of Preferences file name PreferencesHelper.initHelper(this);
-        *Will use CustomName as the name of SharePreferences file PreferencesHelper.initHelper(this, "CustomName");
-
-   <<<<    Using:    >>>>
-       SET VALUE:
-       PreferencesHelper.getInstance().setValue(KEY_BOOLEAN, true);
-       PreferencesHelper.getInstance().setValue(KEY_DOUBLE, 123.123);
-       PreferencesHelper.getInstance().setValue(KEY_FLOAT, 234.234f);
-       PreferencesHelper.getInstance().setValue(KEY_INT, 345);
-       PreferencesHelper.getInstance().setValue(KEY_LONG, Long.MAX_VALUE);
-       PreferencesHelper.getInstance().setValue(KEY_STRING, "Khang");
-       UserModel userModel = new UserModel("KhangTran", 27);
-       PreferencesHelper.getInstance().setValue(KEY_OBJECT, userModel);
-
-       GET VALUE:
-       boolean booleanValue = PreferencesHelper.getInstance().getBooleanValue(KEY_BOOLEAN, false);
-       double doubleValue = PreferencesHelper.getInstance().getDoubleValue(KEY_DOUBLE, Double.MIN_VALUE);
-       float floatValue = PreferencesHelper.getInstance().getFloatValue(KEY_FLOAT, Float.MIN_VALUE);
-       int intValue = PreferencesHelper.getInstance().getIntValue(KEY_INT, Integer.MIN_VALUE);
-       long longValue = PreferencesHelper.getInstance().getLongValue(KEY_LONG, Long.MIN_VALUE);
-       String stringValue = PreferencesHelper.getInstance().getStringValue(KEY_STRING, "Empty");
-       UserModel userModel = PreferencesHelper.getInstance().getObjectValue(KEY_OBJECT, UserModel.class);
- */
-
 import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.google.gson.Gson;
 import com.google.gson.internal.Primitives;
 import com.google.gson.reflect.TypeToken;
+import com.guy.common.DataTable;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class MSP {
 
@@ -150,13 +119,12 @@ public class MSP {
         prefs.unregisterOnSharedPreferenceChangeListener(listener);
     }
 
-    public <T> void putArray(String KEY, ArrayList<T> array) {
+    public void putArray(String KEY, List<DataTable> array) {
         String json = new Gson().toJson(array);
         prefs.edit().putString(KEY, json).apply();
     }
-
+    // type token == new TypeToken<ArrayList<YOUR_CLASS>>() {}
     public <T> ArrayList<T> getArray(String KEY, TypeToken typeToken) {
-        // type token == new TypeToken<ArrayList<YOUR_CLASS>>() {}
         ArrayList<T> arr = null;
         try {
             arr = new Gson().fromJson(prefs.getString(KEY, ""), typeToken.getType());

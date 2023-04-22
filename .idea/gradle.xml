@@ -10,10 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/cigarettes" />
-            <option value="$PROJECT_DIR$/cola" />
             <option value="$PROJECT_DIR$/common" />
-            <option value="$PROJECT_DIR$/instagram" />
+            <option value="$PROJECT_DIR$/contacts" />
+            <option value="$PROJECT_DIR$/expenses" />
           </set>
         </option>
       </GradleProjectSettings>
