@@ -42,12 +42,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         HorizontalLayout = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(HorizontalLayout);
-        buttonAddNote.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),App_Parent.statsClass);
-                startActivity(intent);
-            }
+        buttonAddNote.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(),App_Parent.statsClass);
+            startActivity(intent);
         });
     }
 

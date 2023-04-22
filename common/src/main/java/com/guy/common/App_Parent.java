@@ -9,8 +9,8 @@ public abstract class App_Parent extends Application {
 
     @Override
     public void onCreate() {
-        super.onCreate();
         MSP.initHelper(this);
+        super.onCreate();
     }
 
 }

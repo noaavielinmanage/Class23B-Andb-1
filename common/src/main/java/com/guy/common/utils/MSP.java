@@ -30,14 +30,16 @@ public class MSP {
     }
 
     public static MSP initHelper(Context context) {
-        if (instance == null)
+        if (instance == null) {
             instance = new MSP(context);
+        }
         return instance;
     }
 
     public static MSP initHelper(Context context, String sharePreferencesName) {
-        if (instance == null)
+        if (instance == null) {
             instance = new MSP(context, sharePreferencesName);
+        }
         return instance;
     }
 
