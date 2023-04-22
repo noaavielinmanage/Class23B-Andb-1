@@ -38,13 +38,12 @@
 
     <Button
         android:id="@+id/button_add_note"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_gravity="bottom|end"
         android:layout_margin="32dp"
         android:minHeight="48dp"
-        android:src="@drawable/plus"
-        app:backgroundTint="#2EA613"
+        android:background="@drawable/plus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.932"

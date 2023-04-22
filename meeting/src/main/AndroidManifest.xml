@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        tools:remove="android:appComponentFactory"
+        tools:targetApi="p"
         android:name=".App"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher_background"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/MaterialAlertDialog.Material3">
+        android:theme="@style/Theme.BaseApplication">
         <activity
             android:name=".AddMeetingActivity"
             android:exported="true"/>
-
     </application>
 
 </manifest>
