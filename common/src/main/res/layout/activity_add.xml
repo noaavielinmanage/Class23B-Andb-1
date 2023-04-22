@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="match_parent"
-        android:background="#E91E63">
+        android:background="#E8CFD7">
 
         <com.google.android.material.textfield.TextInputLayout
 
@@ -135,15 +135,15 @@
             app:layout_constraintStart_toEndOf="@+id/titleID"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.975"
-            app:strokeColor="#2EA613" />
+            app:strokeColor="#E91E63" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/selectDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#123456"
+            android:background="#FA99BA"
             android:text="Select Date"
-            android:textColor="@color/colorErrorDark"
+            android:textColor="@color/black"
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -157,7 +157,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" "
-            android:textColor="@android:color/holo_red_dark"
+            android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
