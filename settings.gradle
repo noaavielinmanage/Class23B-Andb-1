@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "Class23B-Andb-1"
 include ':common'
 include ':contacts'
-include ':expenses'
+include ':meetings'

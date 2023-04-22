@@ -1,31 +1,31 @@
 package com.project.expenses;
 
 import com.guy.common.ActivityAdd;
-public class AddExpenseActivity extends ActivityAdd{
+public class AddMeetingActivity extends ActivityAdd{
 
     protected String SetTitle() {
-        return "Add Expense";
+        return "Add Meeting";
     }
 
     @Override
     protected String setName() {
-        return "Expense Name";
+        return "Meeting Name";
     }
 
     @Override
     protected String SetTypeOfDataInt() {
-        return "Amount";
+        return "Priority Level";
     }
 
     @Override
     protected String setError() {
-        return "Amount Can't Be Negative";
+        return "Priority Can't Be Negative";
     }
 
     @Override
     protected boolean checkValidion(String amountText) {
         try {
-            if (Integer.parseInt(amountText) < 0) {
+            if (Integer.parseInt(amountText) < 0 && Integer.parseInt(amountText) > 5) {
                 return false;
             }
         } catch (NumberFormatException e) {

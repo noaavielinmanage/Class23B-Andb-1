@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="match_parent"
-        android:background="#554696">
+        android:background="#E91E63">
 
         <com.google.android.material.textfield.TextInputLayout
 
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            app:boxStrokeColor="#2EA613"
+            app:boxStrokeColor="#E39BB3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,6 @@
                 android:imeOptions="actionNext"
                 android:inputType="textCapWords"
                 android:nextFocusDown="@id/amount_input"
-
                 android:singleLine="true"
                 tools:ignore="TouchTargetSizeCheck" />
 
@@ -53,7 +52,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:inputType="numberDecimal"
-            app:boxStrokeColor="#2EA613"
+            app:boxStrokeColor="#FF81AC"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -84,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            app:boxStrokeColor="#2EA613"
+            app:boxStrokeColor="#FFD1E1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -128,7 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SAVE"
-            android:textColor="#CD09910B"
+            android:textColor="#B56983"
             app:backgroundTint="#FDFBFB"
             app:layout_constraintBottom_toTopOf="@+id/name_input_text"
             app:layout_constraintEnd_toEndOf="parent"
@@ -144,7 +143,7 @@
             android:layout_height="wrap_content"
             android:background="#123456"
             android:text="Select Date"
-            android:textColor="@android:color/holo_red_dark"
+            android:textColor="@color/colorErrorDark"
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"

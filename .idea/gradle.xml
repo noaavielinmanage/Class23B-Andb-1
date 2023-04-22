@@ -12,7 +12,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/contacts" />
-            <option value="$PROJECT_DIR$/expenses" />
+            <option value="$PROJECT_DIR$/meetings" />
           </set>
         </option>
       </GradleProjectSettings>

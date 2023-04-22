@@ -43,7 +43,6 @@ public abstract class ActivityAdd extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setDate();
-                // Get Current Date
             }
         });
         save.setOnClickListener(new View.OnClickListener() {

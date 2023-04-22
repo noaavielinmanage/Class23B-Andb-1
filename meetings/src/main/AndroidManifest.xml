@@ -8,7 +8,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Class23BAndb1">
         <activity
-            android:name=".AddExpenseActivity"
+            android:name=".AddMeetingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
